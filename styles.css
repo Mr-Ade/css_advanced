@@ -1,0 +1,483 @@
+/* Font imports and global styles */
+@font-face { 
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro/SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    user-select: none;
+}
+
+/* Header and Navigation */
+header, main > section {
+    padding: 1rem 9rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav li a {
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+/* Hero Section */
+.backgroundImage {
+    background-image: url('./Object.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+  main>section>div{
+    /* display: flex; */
+    justify-items: center;
+    margin-top: 14rem;
+  }
+  
+  main>section>div>h1{
+  font-weight: 700;
+  font-size: 120px;
+  margin-bottom: .5rem;
+  
+  align-items: center;
+  color: #fff;
+  
+  }
+  
+  main>section span{
+    color: #fff;
+    margin-right: 2rem;
+    font-weight: 700;
+  font-size: 16px;
+  align-items: center;
+  
+  }
+  
+  main>section button{
+    margin-top: 3rem;
+    color: #fff;
+    background-color: #C271FF;
+    border: none;
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    box-shadow: 4px 0px 10px #cac3c3;
+  
+  }
+
+/* Learn Section */
+.learnSection {
+    direction: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learnSection > h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    text-align: center;
+    color: #C271FF;
+    margin: 3rem 0 5rem 0;
+}
+
+.learnSection > h2 > span {
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40.22px;
+    text-align: center;
+}
+
+/* Tutors Section */
+.tutors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    gap: 10rem;
+    text-align: center;
+    color: #fff;
+}
+
+.tutors img {
+    margin-bottom: 1rem;
+}
+
+.tutors h3 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 27px;
+    text-align: center;
+}
+
+.tutors p {
+    margin-top: 0.5rem;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* Quote Section */
+.quote-section {
+    height: 392px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C271FF;
+    color: #fff;
+}
+
+.quote-sectionHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 4rem;
+    margin: 0 auto;
+    padding-left: 16rem;
+}
+
+.quote {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+blockquote {
+    width: 70%;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33.6px;
+    margin-bottom: 1rem;
+}
+
+.quote h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33.6px;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.quote p {
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 33.6px;
+}
+
+/* Video Section */
+.video-section {
+    margin: 5rem 0;
+    padding: 1rem 10rem;
+    background-color: #fff;
+    width: 100%;
+}
+
+.video-section > h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.video-section > h2 > span {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #C271FF;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.videoSection-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holder {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.play-button {
+    position: absolute;
+    left: 85px;
+    bottom: 38px;
+}
+
+.video-section h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: #071629;
+}
+
+.video-section p {
+    width: 60%;
+    color: #071629;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Review Section */
+.review-img {
+    display: flex;
+    margin-top: 0.8rem;
+}
+
+.review-img img {
+    width: 7%;
+    height: 7%;
+}
+
+.video-section h4 {
+    font-family: Source Sans Pro;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: left;
+    margin-left: 0.5rem;
+    color: #C271FF;
+}
+
+.star {
+    display: flex;
+    justify-content: space-between;
+    color: #C271FF;
+    margin-top: 1rem;
+    width: 80%;
+}
+
+.lastStar {
+    color: #cac3c3;
+}
+
+.star p {
+    text-align: center;
+}
+
+/* Membership Section */
+.membership-section {
+    background-color: #071629;
+    color: #fff;
+    padding: 1rem 10rem;
+    width: 100%;
+    height: 520px;
+}
+
+.membership-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.membership-title {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.membership-title > h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #C271FF;
+}
+
+.membership-title > h2 > span {
+    font-size: 32px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 0.3rem;
+    color: #fff;
+}
+
+.each-member h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.each-member p {
+    font-size: 14px;
+    font-weight: 400;
+    width: 60%;
+}
+
+.membership-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.membership-section button {
+    margin-top: 3rem;
+    color: #fff;
+    background-color: #C271FF;
+    border: none;
+    width: 162px;
+    height: 44px;
+    border-radius: 22px;
+    box-shadow: 4px 0px 10px #cac3c3;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.faq-section > h2 {
+    width: 70%;
+    color: #071629;
+    padding-left: 14rem;
+    font-size: 60px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.faq-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 14rem;
+    margin: 0 auto;
+}
+
+.faq-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
+    text-align: left;
+    margin: 5rem 0 2rem 0;
+}
+
+.faq-writeUp {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    width: 80%;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #071629;
+    color: #fff;
+    padding: 3rem 10rem;
+    width: 100%;
+    height: 300px;
+    margin-top: 5rem;
+}
+
+footer > section {
+    width: 80%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer i {
+    margin-right: 1rem;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    header, main > section {
+        padding: 1rem 2rem;
+    }
+    
+    main > section > div > h1 {
+        font-size: 80px;
+    }
+    
+    .tutors {
+        flex-direction: column;
+        gap: 3rem;
+        width: 100%;
+    }
+    
+    .quote-sectionHolder {
+        flex-direction: column;
+        padding-left: 2rem;
+    }
+    
+    .membership-holder {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .faq-holder {
+        padding-left: 0;
+    }
+}
+
+.backgroundImage {
+    background-image: url('images/Object.png');
+    background-size: cover;
+    background-position: center;
+    height: 150vh; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+}
+.nav {
+    position: absolute;
+    top: 20px;
+    right: 250px;
+}
